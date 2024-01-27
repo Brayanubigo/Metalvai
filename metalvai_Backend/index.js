@@ -14,7 +14,7 @@ app.use(express.json())
 app.disable('x-powered-by')
 dotenv.config();    
 
-const dominiosPermitidos = [process.env.FRONTEND_URL]
+const dominiosPermitidos = [process.env.FRONTEND_URL] 
 const corsOption = {
     origin:function(origin,callback){
         if(dominiosPermitidos.indexOf(origin) !== -1){
