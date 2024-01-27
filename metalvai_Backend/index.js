@@ -14,18 +14,18 @@ app.use(express.json())
 app.disable('x-powered-by')
 dotenv.config();    
 
-// const dominiosPermitidos = [process.env.FRONTEND_URL]
-// const corsOption = {
-//     origin:function(origin,callback){
-//         if(dominiosPermitidos.indexOf(origin) !== -1){
-//             callback(null,true)
-//         }else{
-//             callback(new Error('No permitido por CORS'))
-//         }
-//     }
-// }
+const dominiosPermitidos = [process.env.FRONTEND_URL]
+const corsOption = {
+    origin:function(origin,callback){
+        if(dominiosPermitidos.indexOf(origin) !== -1){
+            callback(null,true)
+        }else{
+            callback(new Error('No permitido por CORS'))
+        }
+    }
+}
 
-//app.use(cors(corsOption))
+app.use(cors(corsOption))
 
 
 
