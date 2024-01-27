@@ -30,6 +30,8 @@ dotenv.config();
 // app.get("/",(req,res)=>
 // {const htmlResponse="<html><head><body>olaaaaaa</body></head></html>";
 //  res.send(htmlResponse)})
+
+
 app.use(admin)
 app.use(productos)
 app.use(clientes)
