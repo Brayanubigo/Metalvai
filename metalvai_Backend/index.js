@@ -45,7 +45,7 @@ app.use((req,res,next)=> {
 
 
 
-const PORT = process.env.PORT ?? 1234
+const PORT = process.env.PORT || 4000
 app.listen(PORT,()=>{
     
 })
