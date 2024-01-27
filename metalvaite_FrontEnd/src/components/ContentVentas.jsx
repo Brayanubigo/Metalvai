@@ -50,7 +50,7 @@ export function ContentVentas() {
     const id = idusuario
    
     const res = await clienteAxios.get(`/getVentasByUser/${id}`).then((res) => {
-      console.log(res.data.rows)
+     
       setDatos(res.data.rows)
 
     }).catch((err) => {
