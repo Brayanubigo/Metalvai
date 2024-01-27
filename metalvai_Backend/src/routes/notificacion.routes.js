@@ -1,5 +1,5 @@
 import { Router } from "express";
-import  enviarNotificacion  from '../controllers/notifi.controllers.js';
+import  enviarNotificacion  from '../controllers/notifi.controllers.js'
 const router = Router()
 
 router.post('/activarNoti',enviarNotificacion)
