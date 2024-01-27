@@ -1,6 +1,6 @@
 import { Router } from "express";
 import {getVentaByIdUser, postVentas,deleteVentas,getVentaId, getVenta} from '../controllers/ventas.controllers.js'
-import checkStock from "../middleware/CheckStock.js";
+import checkStock from "../middleware/checkStock.js";
 const router = Router()
 
 router.get('/getVentasByUser/:id',getVentaByIdUser)
