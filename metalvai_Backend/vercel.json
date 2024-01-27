@@ -1,3 +1,13 @@
 {
-    "rewrites": [{ "source": "/src/(.*)", "destination": "/" }]
+    "builds": [{
+        "src": "./index.js",
+        "use": "@vercel/nodemon"
+    }],
+    "routes": [{
+        "src":"./(.*)",
+        "des":"/"
+    }],
+    "rewrites": 
+    [{ "source": "/src/(.*)",
+     "destination": "/" }]
 }
