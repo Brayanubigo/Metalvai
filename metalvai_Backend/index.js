@@ -37,11 +37,11 @@ app.use(ventas)
 app.use(notificacion)
 
 
-app.use((req,res,next)=> {
-    res.status(404).json({
-        message: '404 NOT FOUND'
-    })
-})
+// app.use((req,res,next)=> {
+//     res.status(404).json({
+//         message: '404 NOT FOUND'
+//     })
+// })
 
 
 
